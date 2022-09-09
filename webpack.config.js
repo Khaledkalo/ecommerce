@@ -23,7 +23,7 @@ module.exports = {
       writeToDisk: true,
     },
     compress: true,
-    port: 9000,
+    port: 1233,
   },
 
   // Loader: jede Loader wird seine rule in Form von module geschrieben
@@ -41,23 +41,61 @@ module.exports = {
         ],
       },
 
+      // {
+      //   test: /\.css$/,
+      //   use: 
+      //   [MiniCssExtractPlugin.loader, "css-loader"],
+      // },
+
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+            {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  esModule: false,
+                  publicPath: '../',
+                },
+              },
+            'css-loader'
+        ]
+    },
+
+      // {
+      //   test: /\.(png|svg|jpe?g|gif)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //         outputPath: "images",
+      //       },
+      //     },
+      //   ],
+      // },
+
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts",
+              esModule: false,
+            },
+          },
+        ],
       },
 
-        {
-          test: /\.(png|svg|jpe?g|gif)$/,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: '[name].[ext]',
-                outputPath: "images",
-              }
-            }
-          ]
-        },
+      {
+        test: require.resolve('jquery'),
+        loader: 'expose-loader',
+        options: {
+          exposes: ['$', 'jQuery'],
+        }
+      },
+
     ],
   },
 

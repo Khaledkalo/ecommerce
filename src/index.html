@@ -12,17 +12,183 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<nav class="navbar">
-				<div class="container">
-					<div class="navbar-header">
-						<a href="." class="navbar-brand">
-							<img src="./images/logo.png" alt="ecommerce">
-						</a>
-					</div>
+			<!-- Navbar -->
+			<nav class="navbar custom-navbar navbar-expand-lg">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<a href="." class="navbar-brand">
+						<img src="./images/logo2.png" alt="ecommerce">
+					</a>
 				</div>
+				<form class="form-inline">
+					<input type="search" class="form-control custom-form-control" placeholder="search . .">
+					<div class="Dropdown categories">
+						<a href="#" class="nav-link dropdown-toggle custtom-btn" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							Wähle eine Kategorie
+						</a>
+						<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="men">
+										Männer
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="women">
+										Frauen
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="kids">
+										Kinder
+									</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="btn search-btn" type="submit">Suchen</button>
+				</form>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Startseite</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-expanded="false">Store Abteilungen
+						</a>
+						<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#">Männer</a></li>
+							<li><a class="dropdown-item" href="#">Frauen</a></li>
+							<li><a class="dropdown-item" href="#">Kinder</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./search.html">Erweiterter Suche</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contact.html">Kontakt uns</a>
+					</li>
+					<li>
+						<a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="Kaufwagen"
+							data-toggle="tooltip" data-placement="bottom">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- </div> -->
 			</nav>
 		</div>
+		<!-- Featured Products -->
+		<div class="row carousel-row">
+			<div class="col-12">
+				<!-- slide -->
+				<div id="carousel-featured" class="carousel slid" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container">
+								<div class="row">
+									<div class="col-4">
+										<img src="images/lacoste_1.png" alt="locaste T-shirt">
+									</div>
+									<div class="col-5">
+										<div class="product-details">
+											<div class="sale large">
+												50%
+												<span>Angebot</span>
+											</div>
+											<div class="product-category">Angebote</div>
+											<h1>Männer T-shirt von Lacoste</h1>
+											<a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">Jetzt einkaufen</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container">
+								<div class="row">
+									<div class="col-4">
+										<img src="images/lacoste_2.png" alt="locaste T-shirt">
+									</div>
+									<div class="col-5">
+										<div class="product-details">
+											<div class="product-category">Angebote</div>
+											<h1>Chantaku-Tasche für Frauen</h1>
+											<a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">Jetzt einkaufen</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container">
+								<div class="row">
+									<div class="col-4">
+										<img src="images/lacoste_3.png" alt="locaste T-shirt">
+									</div>
+									<div class="col-5">
+										<div class="product-details">
+											<div class="product-category">Angebote</div>
+											<h1>T-shirt Polo</h1>
+											<a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">Jetzt einkaufen</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container">
+								<div class="row">
+									<div class="col-4">
+										<img src="images/adidas_3.png" alt="locaste T-shirt">
+									</div>
+									<div class="col-5">
+										<div class="product-details">
+											<div class="product-category">Angebote</div>
+											<h1>Firebird-Trainingsanzug</h1>
+											<a href="product.html" class="btn btn-lg custom-btn custom-btn-primary">Jetzt einkaufen</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- thumbnail images -->
+					<div class=" carousel-indicators custom-carousel-indicators-primary d-none d-md-block">
+						<img src="./images/lacoste_1.png" alt="تي شيرت رجالي من لاكوست" data-target="#carousel-featured"
+							data-slide-to="0" class="active">
+						<img src="./images/lacoste_2.png" alt="حقيبة شانتاكو نسائية" data-target="#carousel-featured"
+							data-slide-to="1">
+						<img src="./images/lacoste_3.png" alt="تي شيرت رجالي من بولو" data-target="#carousel-featured"
+							data-slide-to="2">
+						<img src="./images/adidas_3.png" alt="بدلة فايربرد الرياضية" data-target="#carousel-featured"
+							data-slide-to="3">
+					</div>
+					<!--Pfeilnavigation-->
+					<a class="carousel-control-next custom-carousel-control" href="#carousel-featured" data-slide="next">
+						<i class="fa fa-chevron-right fa-2x"></i>
+					</a>
+					<a class="carousel-control-prev custom-carousel-control" href="#carousel-featured" data-slide="prev">
+						<i class="fa fa-chevron-left fa-2x"></i>
+					</a>
+
+				</div>
+			</div>
+			
+		</div>
 	</div>
+
+
+
 </body>
 
 </html>
