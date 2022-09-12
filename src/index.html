@@ -16,6 +16,13 @@
 			<nav class="navbar custom-navbar navbar-expand-lg">
 				<!-- <div class="container"> -->
 				<div class="navbar-header">
+					<button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+						data-target="#navbar-collapsed-menu">
+						<i class="fas fa-bars"></i>
+					</button>
+					<a href="." class="navbar-toggler btn btn-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
 					<a href="." class="navbar-brand">
 						<img src="./images/logo2.png" alt="ecommerce">
 					</a>
@@ -56,33 +63,35 @@
 					</div>
 					<button class="btn search-btn" type="submit">Suchen</button>
 				</form>
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="./index.html">Startseite</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-							aria-expanded="false">Store Abteilungen
-						</a>
-						<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
-							<li><a class="dropdown-item" href="#">Männer</a></li>
-							<li><a class="dropdown-item" href="#">Frauen</a></li>
-							<li><a class="dropdown-item" href="#">Kinder</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./search.html">Erweiterter Suche</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./contact.html">Kontakt uns</a>
-					</li>
-					<li>
-						<a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="Kaufwagen"
-							data-toggle="tooltip" data-placement="bottom">
-							<i class="fas fa-shopping-cart"></i>
-						</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="./index.html">Startseite</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">Store Abteilungen
+							</a>
+							<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+								<li><a class="dropdown-item" href="#">Männer</a></li>
+								<li><a class="dropdown-item" href="#">Frauen</a></li>
+								<li><a class="dropdown-item" href="#">Kinder</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./search.html">Erweiterter Suche</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Kontakt uns</a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="Kaufwagen"
+								data-toggle="tooltip" data-placement="bottom">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 				<!-- </div> -->
 			</nav>
 		</div>
@@ -95,10 +104,11 @@
 						<div class="carousel-item active">
 							<div class="container">
 								<div class="row">
-									<div class="col-4">
+									<!-- <div class="col-4 offset-lg-2"> -->
+									<div class="col-4 text-center">
 										<img src="images/lacoste_1.png" alt="locaste T-shirt">
 									</div>
-									<div class="col-5">
+									<div class="col-lg-4 col-md-8">
 										<div class="product-details">
 											<div class="sale large">
 												50%
@@ -161,7 +171,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- thumbnail images -->
 					<div class=" carousel-indicators custom-carousel-indicators-primary d-none d-md-block">
 						<img src="./images/lacoste_1.png" alt="تي شيرت رجالي من لاكوست" data-target="#carousel-featured"
@@ -180,13 +189,1322 @@
 					<a class="carousel-control-prev custom-carousel-control" href="#carousel-featured" data-slide="prev">
 						<i class="fa fa-chevron-left fa-2x"></i>
 					</a>
-
 				</div>
 			</div>
-			
 		</div>
-	</div>
 
+		<!--Store Features-->
+		<div class="container">
+			<div class="row">
+				<div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-3">
+					<h3 class="text-center custom-heading">
+						Store Features
+					</h3>
+					<div class="row">
+						<div class="col-4 text-center feature">
+							<img src="./images/feature_1.png" alt="Free Delivery">
+							<div>FREE DELIVERY</div>
+						</div>
+						<div class="col-4 text-center feature">
+							<img src="./images/feature_2.png" alt="1 Year Product Warranty">
+							<div>One year product warranty</div>
+						</div>
+						<div class="col-4 text-center feature">
+							<img src="./images/feature_3.png" alt="Product Return">
+							<div>Product Return</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End of Store Features-->
+
+		<!--most solld-->
+		<div class="row">
+			<div class="container">
+				<h3 class="text-center custom-heading">most solld</h3>
+				<div id="carousel-most-sold" class="carousel slide d-none d-md-block" data-ride="carouselX">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<!--Product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail">
+										<div class="overlay">
+											<button class="btn btn-secondary add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/most_sold_2.jpg" alt="Flora T-shirt">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Flora T-shirt</h4>
+												<div class="price float-left">200$</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail">
+										<div class="overlay">
+											<button class="btn btn-secondary add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/most_sold_1.jpg" alt="Navi Shir-bluse">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Navi Shir-bluse</h4>
+												<div class="price float-left">
+													500$
+												</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail">
+										<div class="sale">50%</div>
+										<div class="overlay">
+											<button class="btn btn-secondary add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/most_sold_3.jpg" alt="Kinder Jacket">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Kinder Jacket</h4>
+												<div class="price float-left">
+													450$
+												</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Product-->
+								<div class="col-lg-3 col-md-4 d-none d-lg-block">
+									<div class="card custom-thumbnail">
+										<div class="overlay">
+											<button class="btn btn-secondary add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/hm_3.jpg" alt="Kinder Anzug">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Kinder Anzug</h4>
+												<div class="price float-left">
+													25$
+												</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/adidas_4.jpg" alt="Altimit T-shiert">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Altimit T-shiert</h4>
+												<div class="price float-left">
+													200$
+												</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/lacoste_1.jpg" alt="T-shirt Männer">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">T-shirt Männer</h4>
+												<div class="price float-left">
+													50$
+												</div>
+											</div>
+											<div class="rating ">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/hm_2.jpg" alt="Meliertes Kleid für Mädchen">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Kleid Mädchen</h4>
+												<div class="price float-left">
+													20$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4 d-none d-lg-block">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="sale">50%</div>
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/puma_1.jpg" alt="sport schuhe schwedisch">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Sport schuhe</h4>
+												<div class="price float-left">
+													75$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/polo_2.jpg" alt="Hemd Stricht-fit">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Hemd Stricht-fit</h4>
+												<div class="price float-left">
+													100$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/adidas_2.jpg" alt="Bior post Schuhe">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Bior post Schuhe</h4>
+												<div class="price float-left">
+													150$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/polo_1.jpg" alt="Hemd slim-fit">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Hemd slim-fit</h4>
+												<div class="price float-left">
+													85$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--product-->
+								<div class="col-lg-3 col-md-4 d-none d-lg-block">
+									<div class="card custom-thumbnail" data-product="">
+										<div class="sale">50%</div>
+										<div class="overlay">
+											<button class="btn btn-default add-to-cart-btn">
+												add to cart
+												<i class="fas fa-cart-plus"></i>
+											</button>
+										</div>
+										<img src="./images/lacoste_2.jpg" alt="Chantago Bag">
+										<div class="card-body">
+											<div class="clearfix">
+												<h4 class="float-right">Chantago Bag</h4>
+												<div class="price float-left">
+													200$
+												</div>
+											</div>
+											<div class="rating">
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star active"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="clearfix">
+												<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+													add to cart
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- مؤشر دائري  - carousel-indicator -->
+					<ol class="carousel-indicators custom-carousel-indicators">
+						<li data-target="#carousel-most-sold" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-most-sold" data-slide-to="1"></li>
+						<li data-target="#carousel-most-sold" data-slide-to="2"></li>
+					</ol>
+				</div>
+
+				<!--Alternative carousel -->
+				<div id="carousel-most-sold-alternative" class="carousel slide d-md-none" data-ride="carousel">
+					<div class="carousel-inner">
+						<!-- slice contains only one product -->
+						<div class="active carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/most_sold_2.jpg" alt="فلورا تي شيرت">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-left">فلورا تي شيرت</h4>
+										<div class="price float-right">
+											200$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/most_sold_1.jpg" alt="شير بلوز من نافي">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-left">شير بلوز من نافي</h4>
+										<div class="price float-right">
+											500$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="sale">50%</div>
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/most_sold_3.jpg" alt="جاكت أولادي">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">جاكت أولادي</h4>
+										<div class="price float-left">
+											450$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/hm_3.jpg" alt="طقم للصغار">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">طقم للصغار</h4>
+										<div class="price float-left">
+											25$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/adidas_4.jpg" alt="تيشيرت ألتيميت">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">تيشيرت ألتيميت</h4>
+										<div class="price float-left">
+											200$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/lacoste_1.jpg" alt="تي شيرت رجالي">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">تي شيرت رجالي</h4>
+										<div class="price float-left">
+											50$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/hm_2.jpg" alt="ثوب بناتي مرقش">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">ثوب بناتي مرقش</h4>
+										<div class="price float-left">
+											20$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="sale">50%</div>
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/puma_1.jpg" alt="حذاء سويدي الرياضي">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">حذاء سويدي الرياضي</h4>
+										<div class="price float-left">
+											75$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/polo_2.jpg" alt="قميص سترتش فت">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-left">قميص سترتش فت</h4>
+										<div class="price float-left">
+											100$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/adidas_2.jpg" alt="حذاء بيور بوست">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">حذاء بيور بوست</h4>
+										<div class="price float-left">
+											150$
+										</div>
+									</div>
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/polo_1.jpg" alt="قميص سليم-فت">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">قميص سليم-فت</h4>
+										<div class="price float-left">
+											85$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											add to cart
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slice contains only one product -->
+						<div class="carousel-item">
+							<div class="card custom-thumbnail" data-product="">
+								<div class="sale">50%</div>
+								<div class="overlay">
+									<button class="btn btn-default add-to-cart-btn">
+										إضافة للعربة
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+								<img src="./images/lacoste_2.jpg" alt="حقيبة شانتاكو">
+								<div class="card-body">
+									<div class="clearfix">
+										<h4 class="float-right">حقيبة شانتاكو</h4>
+										<div class="price float-left">
+											200$
+										</div>
+									</div>
+									<div class="rating ">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="clearfix">
+										<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none">
+											إضافة للعربة
+											<i class="fas fa-cart-plus"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Alternative carousel-indicatores-->
+				<div class="col-12 d-md-none text-center">
+					<button class="btn custom-arrow-btn" data-target="#carousel-most-sold-alternative" data-slide="prev">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<button class="btn custom-arrow-btn" data-target="#carousel-most-sold-alternative" data-slide="next">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!--Ende most solld-->
+
+		<!--International Brands-->
+		<div id="row-brands">
+			<div class="container">
+				<h3 class="custom-heading">International Brands</h3>
+				<div class="row">
+					<!--1 Produkte des Unternehmens-->
+					<div class="col-12 col-md-6 brand-products">
+						<div class=" custom-panel">
+							<div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="row">
+											<div class="col-lg-4">
+												<img src="./images/adidas_1.jpg" alt="قميص تك فت بيز" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Tech Fit Bees shirt</h4>
+													</div>
+													<div class="float-left price">
+														35$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Maximize performance during your workouts with this comfortable and muscle-supporting T-shirt.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12 d-lg-none">
+												<a href="product.html" class="btn  custom-btn-primary btn-block">Browse Product</a>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-lg-4">
+												<!--Product Picture-->
+												<img src="./images/adidas_2.jpg" alt="حذاء بيور بوست الرياضي" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<!--Product Description-->
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Pure Boost Sneakers</h4>
+													</div>
+													<div class="price float-left">
+														150$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Experience the feeling of lightness and run at full speed with the Adidas Pure Boost sneakers.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12">
+												<a href="product.html" class="btn custom-btn-primary btn-block">Browse product</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="brand-nav">
+									<div class="clearfix">
+										<div class="float-right">
+											<div class="brand-text">Brand: </div>
+											<img src="./images/adidas_small.png" alt="Adidas">
+										</div>
+										<div class="float-left">
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="prev">
+												<i class="fas fa-chevron-left"></i>
+											</button>
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="next">
+												<i class="fas fa-chevron-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--2 Produkte des Unternehmens-->
+					<div class="col-12 col-md-6 brand-products">
+						<div class=" custom-panel">
+							<div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+								<div class="carousel-inner">
+
+									<div class="carousel-item active">
+										<div class="row">
+											<div class="col-lg-4">
+												<img src="./images/puma_1.jpg" alt="حذاء سويدي الرياضي" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Tech Fit Bees shirt</h4>
+													</div>
+													<div class="float-left price">
+														35$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Maximize performance during your workouts with this comfortable and muscle-supporting T-shirt.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12 d-lg-none">
+												<a href="product.html" class="btn  custom-btn-primary btn-block">Browse Product</a>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-lg-4">
+												<!--صورة المنتج-->
+												<img src="./images/puma_2.jpg" alt="حذاء التنس سماش بَك" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">تصفح
+													المنتج</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<!--Product Description-->
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Pure Boost Sneakers</h4>
+													</div>
+													<div class="price float-left">
+														150$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Experience the feeling of lightness and run at full speed with the Adidas Pure Boost sneakers.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12">
+												<a href="product.html" class="btn custom-btn-primary btn-block">Browse product</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="brand-nav">
+									<div class="clearfix">
+										<div class="float-right">
+											<div class="brand-text">Brand: </div>
+											<img src="./images/adidas_small.png" alt="Adidas">
+										</div>
+										<div class="float-left">
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="prev">
+												<i class="fas fa-chevron-left"></i>
+											</button>
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="next">
+												<i class="fas fa-chevron-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--3 Produkte des Unternehmens-->
+					<div class="col-12 col-md-6 brand-products">
+						<div class=" custom-panel">
+							<div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+								<div class="carousel-inner">
+
+									<div class="carousel-item active">
+										<div class="row">
+											<div class="col-lg-4">
+												<img src="./images/polo_1.jpg" alt="قميص سليم-فت" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Tech Fit Bees shirt</h4>
+													</div>
+													<div class="float-left price">
+														35$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Maximize performance during your workouts with this comfortable and muscle-supporting T-shirt.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12 d-lg-none">
+												<a href="product.html" class="btn  custom-btn-primary btn-block">Browse Product</a>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-lg-4">
+												<!--Product Picture-->
+												<img src="./images/polo_2.jpg" alt="قميص سترتش فت" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<!--Product Description-->
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Pure Boost Sneakers</h4>
+													</div>
+													<div class="price float-left">
+														150$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Experience the feeling of lightness and run at full speed with the Adidas Pure Boost sneakers.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12">
+												<a href="product.html" class="btn custom-btn-primary btn-block">Browse product</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="brand-nav">
+									<div class="clearfix">
+										<div class="float-right">
+											<div class="brand-text">Brand: </div>
+											<img src="./images/polo_small.png" alt="Polo">
+										</div>
+										<div class="float-left">
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="prev">
+												<i class="fas fa-chevron-left"></i>
+											</button>
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="next">
+												<i class="fas fa-chevron-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--4 Produkte des Unternehmens-->
+					<div class="col-12 col-md-6 brand-products">
+						<div class=" custom-panel">
+							<div id="carousel-brand-adidas" class="carousel slide" data-slide="carousel">
+								<div class="carousel-inner">
+
+									<div class="carousel-item active">
+										<div class="row">
+											<div class="col-lg-4">
+												<img src="./images/hm_2.jpg" alt="ثوب بناتي مرقش" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Tech Fit Bees shirt</h4>
+													</div>
+													<div class="float-left price">
+														35$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Maximize performance during your workouts with this comfortable and muscle-supporting T-shirt.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12 d-lg-none">
+												<a href="product.html" class="btn  custom-btn-primary btn-block">Browse Product</a>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-lg-4">
+												<!--Product Picture-->
+												<img src="./images/hm_3.jpg" alt="طقم للصغار" class="product-image">
+												<a href="product.html" class="btn  custom-btn-primary btn-block d-none d-lg-block">
+													Browse Product
+												</a>
+											</div>
+											<div class="col-lg-8 product-details">
+												<!--Product Description-->
+												<div class="clearfix">
+													<div class="float-right">
+														<h4>Pure Boost Sneakers</h4>
+													</div>
+													<div class="price float-left">
+														150$
+													</div>
+												</div>
+												<p class="custom-text-muted">
+													Experience the feeling of lightness and run at full speed with the Adidas Pure Boost sneakers.
+												</p>
+												<div class="rating">
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star active"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+											<div class="col-12">
+												<a href="product.html" class="btn custom-btn-primary btn-block">Browse product</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="brand-nav">
+									<div class="clearfix">
+										<div class="float-right">
+											<div class="brand-text">Brand: </div>
+											<img src="./images/hm_small.png" alt="H and M">
+										</div>
+										<div class="float-left">
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="prev">
+												<i class="fas fa-chevron-left"></i>
+											</button>
+											<button class="btn custom-arrow-btn" data-target="#carousel-brand-adidas" data-slide="next">
+												<i class="fas fa-chevron-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End International Brands-->
+
+		<!--Footer-->
+		<div id="footer" class="row">
+			<div id="brand-logos" class="col-12 text-center">
+				<span>The store is an authorized agent of major international companies</span>
+				<div class="img-container">
+					<img src="./images/lacoste.png" alt="Lacoste">
+					<img src="./images/adidas.png" alt="Adidas">
+					<img src="./images/puma.png" alt="Puma">
+					<img src="./images/polo.png" alt="Polo">
+				</div>
+			</div>
+			<div id="footer-nav" class="col-12 text-center">
+				<div class="footer-logo">
+					<a href="./">
+						<img src="./images/logo_footer.png" alt="عربي">
+					</a>
+				</div>
+				<div id="footer-nav-links" class="col-12 d-none d-md-block">
+					<a href=".">Home</a>
+					<a href="search.html">Advanced search</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="newsletter" class="col-12 col-md-6 offset-md-3">
+					<form>
+						<label for="footer-email">
+							Follow the newsletter for the latest offers
+						</label>
+						<br>
+						<div class="input-group">
+							<input id="footer-email" class="form-control custom-form-control" type="email" placeholder="E-mail"
+								name="email" style="direction: rtl;" required>
+							<button type="submit" class="btn custom-btn-primary2">Follow</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="footer-copyright-social" class="col-12">
+				<div class="container">
+					<div class="clearfix">
+						<div id="copyright" class="float-right">
+						</div>
+						<div id="social-icons" class="float-left">
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook-square fa-lg"></i>
+							</a>
+							<a href="https://www.twitter.com">
+								<i class="fab fa-twitter-square fa-lg"></i>
+							</a>
+							<a href="https://www.instagram.com">
+								<i class="fab fa-instagram fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Footer-->
+	</div>
 
 
 </body>

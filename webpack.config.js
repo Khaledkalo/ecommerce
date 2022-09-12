@@ -34,32 +34,47 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: {
-              minimize: true,
-            },
+            // options: {
+            //    minimize: true,
+            // },
           },
         ],
       },
 
       // {
       //   test: /\.css$/,
-      //   use: 
+      //   use:
       //   [MiniCssExtractPlugin.loader, "css-loader"],
       // },
 
+      // css
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader,
+      //       options: {
+      //         esModule: false,
+      //         publicPath: "../",
+      //       },
+      //     },
+      //     "css-loader",
+      //   ],
+      // },
+
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-            {
-                loader: MiniCssExtractPlugin.loader,
-                options: {
-                  esModule: false,
-                  publicPath: '../',
-                },
-              },
-            'css-loader'
-        ]
-    },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../",
+            },
+          },
+          "css-loader",
+          "sass-loader",
+        ],
+      },
 
       // {
       //   test: /\.(png|svg|jpe?g|gif)$/,
@@ -89,13 +104,12 @@ module.exports = {
       },
 
       {
-        test: require.resolve('jquery'),
-        loader: 'expose-loader',
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
         options: {
-          exposes: ['$', 'jQuery'],
-        }
+          exposes: ["$", "jQuery"],
+        },
       },
-
     ],
   },
 
@@ -104,6 +118,31 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "checkout.html",
+      template: "./src/checkout.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "payment.html",
+      template: "./src/payment.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "search.html",
+      template: "./src/search.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html",
     }),
 
     new MiniCssExtractPlugin({ filename: "css/style.css" }),

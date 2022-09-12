@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ecommerce - T-shirt</title>
+	<script type="text/html" src="{require('index.js')}"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Navbar -->
+			<nav class="navbar custom-navbar navbar-expand-lg">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+						data-target="#navbar-collapsed-menu">
+						<i class="fas fa-bars"></i>
+					</button>
+					<a href="." class="navbar-toggler btn btn-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
+					<a href="." class="navbar-brand">
+						<img src="./images/logo2.png" alt="ecommerce">
+					</a>
+				</div>
+				<form class="form-inline">
+					<input type="search" class="form-control custom-form-control" placeholder="search . .">
+					<div class="Dropdown categories">
+						<a href="#" class="nav-link dropdown-toggle custtom-btn" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							Wähle eine Kategorie
+						</a>
+						<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="men">
+										Männer
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="women">
+										Frauen
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="kids">
+										Kinder
+									</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="btn search-btn" type="submit">Suchen</button>
+				</form>
+				<div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Startseite</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">Store Abteilungen
+							</a>
+							<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+								<li><a class="dropdown-item" href="#">Männer</a></li>
+								<li><a class="dropdown-item" href="#">Frauen</a></li>
+								<li><a class="dropdown-item" href="#">Kinder</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./search.html">Erweiterter Suche</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Kontakt uns</a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="Kaufwagen"
+								data-toggle="tooltip" data-placement="bottom">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- </div> -->
+			</nav>
+		</div>
+
+		<!-- Inhalt Product -->
+		<div class="container">
+			<!--Navigation elements-->
+			<div class="row">
+				<ol class="breadcrumb custom-breadcrumb">
+					<li><a href=".">Home</a> </li>
+					<li> <a href="#">Men's Clothing</a> </li>
+					<li class="active">Tech Fit Shirt</li>
+				</ol>
+			</div>
+			<!--Navigation elements End-->
+			<div class="col-12 borders-between">
+				<div class="row">
+					<!--picture - column 1 -->
+					<div class="col-lg-5 offset-lg-1 col-md-9 offset-md-2">
+						<div class="carousel slide" id="carousel-product-images" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/product_1.jpg" alt="Front image of the shirt ">
+								</div>
+								<div class="carousel-item">
+									<img src="images/product_2.jpg" alt="Background image of the shirt">
+								</div>
+							</div>
+							<div class="carousel-indicators custom-carousel-indicators-primary">
+								<img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg"
+									alt="Front image">
+								<img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg"
+									alt="Background image">
+							</div>
+						</div>
+					</div>
+					<!--Discription - column 2 -->
+					<div class="col-lg-5">
+						<form id="form-product-selection" class="borders-between">
+							<!--Category, Address, Price-->
+							<div class="row">
+								<div class="product-category block-100">mens wear</div>
+								<div class="clearfix block-100">
+									<h2 class="float-left">Tech Fit Shirt</h2>
+									<div class="float-right price large">35$</div>
+								</div>
+							</div>
+							<!--Description-->
+							<div class="row">
+								<p class="product-description">
+									Maximize performance during your workouts with the comfort Tech Fit Base Sport Shirt
+									It supports your muscles.
+								</p>
+							</div>
+							<!--Brand & Rating-->
+							<div class="row brand-and-rating">
+								<div class="col-6">
+									<div class="brand">
+										Brand:
+										<img src="images/adidas_small.png" alt="Adidas">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="clearfix">
+										<div class="float-left rating">
+											<i class="fas fa-star active"></i>
+											<i class="fas fa-star active"></i>
+											<i class="fas fa-star active"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--size and color-->
+							<div class="row size-and-color">
+								<div class="col-md-6">
+									Available sizes:
+									<br />
+									<div class="product-option">
+										<label>
+											S
+											<input type="radio" name="size" value="sm">
+										</label>
+									</div>
+									<div class="product-option active">
+										<label>
+											M
+											<input type="radio" name="size" value="m" checked>
+										</label>
+									</div>
+									<div class="product-option">
+										<label>
+											L
+											<input type="radio" name="size" value="l">
+										</label>
+									</div>
+									<div class="product-option">
+										<label>
+											XL
+											<input type="radio" name="size" value="xl">
+										</label>
+									</div>
+								</div>
+								<!--color-->
+								<div class="col-md-6">
+									Available color
+									<br />
+									<div class="product-option color-option" style="background-color: #FFAF32;">
+										<label>&nbsp;
+											<input type="radio" name="color" value="orange">
+										</label>
+									</div>
+									<div class="product-option color-option" style="background-color: #FF322C;">
+										<label>&nbsp;
+											<input type="radio" name="color" value="red">
+										</label>
+									</div>
+									<div class="product-option color-option" style="background-color: #AC38B6;">
+										<label>&nbsp;
+											<input type="radio" name="color" value="purple">
+										</label>
+									</div>
+									<div class="product-option color-option active" style="background-color: #00C1CE;">
+										<label>&nbsp;
+											<input type="radio" name="color" value="blue" checked>
+										</label>
+									</div>
+								</div>
+							</div>
+							<!--Choose Quantity-->
+							<div class="row product-quantity clearfix">
+								<div class="col-12">
+									<div class="clearfix">
+										<div class="float-left label">
+											The required number:
+										</div>
+										<div class="float-left">
+											<select class="form-control custom-form-control" name="quantity">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Add to Cart-->
+							<div class="row">
+								<div class="col-12">
+									<button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
+										<span> Add to Card
+											<i class="fas fa-cart-plus fa-lg"></i>
+										</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--Detailed Product Description-->
+				<div class="row more-description">
+					<div class="col-12">
+						<h3 class="custom-heading heading-with-border-bottom heading-inline">Product Description</h3>
+						<p>
+							Maximize performance during your workouts with the comfort and support Tech Fit Base Sport Shirt
+							your muscles.
+						</p>
+						<ul>
+							<li>Smooth seams to reduce chafing and chafing</li>
+							<li>88% polyester</li>
+							<li>Imported</li>
+						</ul>
+					</div>
+				</div>
+				<!--Product Comments-->
+				<div class="row">
+					<div class="comments block-100">
+						<h3 class="custom-heading heading-inline heading-with-border-bottom">
+							Product Comments
+						</h3>
+						<div class="borders-between">
+							<div class="row">
+								<div class="media">
+									<img src="images/reviewer_1.jpg" alt="Mohamed Hany">
+									<div class="media-body">
+										<h4 class="media-heading">
+											Mohamed Hany
+										</h4>
+										<div class="rating">
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<p>
+											Very good product, I recommend it, made of high quality fabrics
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="media">
+									<img src="images/reviewer_2.jpg" alt="Muna Mahmoud">
+									<div class="media-body">
+										<h4 class="media-heading">
+											Muna Mahmoud
+										</h4>
+										<div class="rating">
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star active"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<p>
+											The price is a little high
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--suggested to you-->
+				<div class="row suggestions">
+					<h3 class="custom-heading col-sm-12">Suggested to you</h3>
+					<!--Product-->
+					<div class="col-lg-3 col-md-4">
+						<div class="card custom-thumbnail">
+							<div class="overlay">
+								<button class="btn btn-secondary add-to-cart-btn" data-add-to-cart="">
+									add to cart
+									<i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+							<img src="images/most_sold_2.jpg" alt="فلورا تي شيرت">
+							<div class="card-body">
+								<div class="clearfix">
+									<h4 class="float-right">فلورا تي شيرت</h4>
+									<div class="price float-left">
+										200$
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="rating float-right">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Product-->
+					<div class="col-lg-3 col-md-4">
+						<div class="card custom-thumbnail">
+							<div class="overlay">
+								<button class="btn btn-secondary add-to-cart-btn">
+									add to cart
+									<i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+							<img src="images/most_sold_1.jpg" alt="شير بلوز من نافي">
+							<div class="card-body">
+								<div class="clearfix">
+									<h4 class="float-right">شير بلوز من نافي</h4>
+									<div class="price float-left">
+										500$
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Product-->
+					<div class="col-lg-3 col-md-4">
+						<div class="card custom-thumbnail">
+							<div class="sale">50%</div>
+							<div class="overlay">
+								<button class="btn btn-secondary add-to-cart-btn">
+									add to cart
+									<i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+							<img src="images/most_sold_3.jpg" alt="جاكت أولادي">
+							<div class="card-body">
+								<div class="clearfix">
+									<h4 class="float-right">جاكت أولادي</h4>
+									<div class="price float-left">
+										450$
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Product-->
+					<div class="col-lg-3 col-md-4 d-none d-lg-block">
+						<div class="card custom-thumbnail">
+							<div class="overlay">
+								<button class="btn btn-secondary add-to-cart-btn">
+									add to cart
+									<i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+							<img src="images/hm_3.jpg" alt="طقم للصغار">
+							<div class="card-body">
+								<div class="clearfix">
+									<h4 class="float-right">طقم للصغار</h4>
+									<div class="price float-left">
+										25$
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="rating">
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+										<i class="fas fa-star active"></i>
+									</div>
+									<button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+										add to cart
+										<i class="fas fa-cart-plus"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Inhalt -->
+		<!--Footer-->
+		<div id="footer" class="row">
+			<div id="brand-logos" class="col-12 text-center">
+				<span>The store is an authorized agent of major international companies</span>
+				<div class="img-container">
+					<img src="./images/lacoste.png" alt="Lacoste">
+					<img src="./images/adidas.png" alt="Adidas">
+					<img src="./images/puma.png" alt="Puma">
+					<img src="./images/polo.png" alt="Polo">
+				</div>
+			</div>
+			<div id="footer-nav" class="col-12 text-center">
+				<div class="footer-logo">
+					<a href="./">
+						<img src="./images/logo_footer.png" alt="عربي">
+					</a>
+				</div>
+				<div id="footer-nav-links" class="col-12 d-none d-md-block">
+					<a href=".">Home</a>
+					<a href="search.html">Advanced search</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="newsletter" class="col-12 col-md-6 offset-md-3">
+					<form>
+						<label for="footer-email">
+							Follow the newsletter for the latest offers
+						</label>
+						<br>
+						<div class="input-group">
+							<input id="footer-email" class="form-control custom-form-control" type="email" placeholder="E-mail"
+								name="email" style="direction: rtl;" required>
+							<button type="submit" class="btn custom-btn-primary2">Follow</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="footer-copyright-social" class="col-12">
+				<div class="container">
+					<div class="clearfix">
+						<div id="copyright" class="float-right">
+						</div>
+						<div id="social-icons" class="float-left">
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook-square fa-lg"></i>
+							</a>
+							<a href="https://www.twitter.com">
+								<i class="fab fa-twitter-square fa-lg"></i>
+							</a>
+							<a href="https://www.instagram.com">
+								<i class="fab fa-instagram fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Footer-->
+</body>
+
+</html>

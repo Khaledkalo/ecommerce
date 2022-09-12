@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/html" src="{require('index.js')}"></script>
+	<title>ecommerce - Contact Site</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!-- Navbar -->
+		<div class="row">
+			<nav class="navbar custom-navbar navbar-expand-lg">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+						data-target="#navbar-collapsed-menu">
+						<i class="fas fa-bars"></i>
+					</button>
+					<a href="." class="navbar-toggler btn btn-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
+					<a href="." class="navbar-brand">
+						<img src="./images/logo2.png" alt="ecommerce">
+					</a>
+				</div>
+				<form class="form-inline">
+					<input type="search" class="form-control custom-form-control" placeholder="search . .">
+					<div class="Dropdown categories">
+						<a href="#" class="nav-link dropdown-toggle custtom-btn" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							Wähle eine Kategorie
+						</a>
+						<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="men">
+										Männer
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="women">
+										Frauen
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="search-category" value="kids">
+										Kinder
+									</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="btn search-btn" type="submit">Suchen</button>
+				</form>
+				<div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Startseite</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">Store Abteilungen
+							</a>
+							<ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+								<li><a class="dropdown-item" href="#">Männer</a></li>
+								<li><a class="dropdown-item" href="#">Frauen</a></li>
+								<li><a class="dropdown-item" href="#">Kinder</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./search.html">Erweiterter Suche</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="./contact.html">Kontakt uns</a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon" title="Kaufwagen"
+								data-toggle="tooltip" data-placement="bottom">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- </div> -->
+			</nav>
+		</div>
+		<!-- Contacht Content -->
+		<div class="row">
+			<!--Map-->
+			<div class="col-12" id="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1607.0913779383416!2d6.989983696166609!3d49.2399607823108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4795b6aea5e73f95%3A0x73966b46ae65e257!2sSaarbr%C3%BCcken%2C%20Hauptbahnhof%20Nord!5e1!3m2!1sde!2sde!4v1662970687817!5m2!1sde!2sde"
+					width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</div>
+		<div class="container">
+			<!--Navigation elements-->
+			<div class="row">
+				<ol class="breadcrumb custom-breadcrumb">
+					<li>
+						<a href=".">Home</a>
+					</li>
+					<li class="active">Contact us</li>
+				</ol>
+			</div>
+			<!--End Navigation elements-->
+			<div id="contact-options" class="row">
+				<!--Contact Information-->
+				<div class="col-12 col-lg-3 offset-lg-2">
+					<h4 class="heading-with-border-bottom">
+						Contact us
+					</h4>
+					<div id="contact-info">
+						<div>
+							<i class="fas fa-phone fa-lg"></i>
+							974.4422.7813
+						</div>
+						<div>
+							<i class="fas fa-envelope fa-lg"></i>
+							info@araby.com
+						</div>
+						<div>
+							<i class="fas fa-map-marker-alt fa-lg"></i>
+							Address: Germany, Saarbrücken, Hautbahnhof
+						</div>
+					</div>
+					<!--Newsletter subscription section-->
+					<h4 class="heading-with-border-bottom">Subscribe to the newsletter</h4>
+					<form id="form-subscription">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="email" class="form-control custom-form-control" placeholder="E-mail" name="email" required>
+								<button class="btn custom-btn-primary2" type="submit">
+									Follow
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!--Leave a message section-->
+				<div class="col-12 col-lg-6">
+					<h4>Leave a message</h4>
+					<form class="row">
+						<div class="col-md-6 form-group">
+							<input class="form-control custom-input-details custom-form-control" name="name" type="text"
+								placeholder="Name" required>
+						</div>
+						<div class="col-md-6 form-group">
+							<input class="form-control custom-input-details custom-form-control" name="email" type="email"
+								placeholder="E-mail" required>
+						</div>
+						<div class="col-12 form-group">
+							<textarea class="form-control custom-input-details custom-form-control" name="message"
+								placeholder="message" required></textarea>
+						</div>
+						<div class="col-12 form-group">
+							<div class="clearfix">
+								<button type="submit" class="float-left btn custom-btn-primary2 custom-btn-with-icon">
+									<span> Send message
+										<i class="far fa-paper-plane"></i>
+									</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--End Contacht Content -->
+		<!--Footer-->
+		<div id="footer" class="row">
+			<div id="brand-logos" class="col-12 text-center">
+				<span>The store is an authorized agent of major international companies</span>
+				<div class="img-container">
+					<img src="./images/lacoste.png" alt="Lacoste">
+					<img src="./images/adidas.png" alt="Adidas">
+					<img src="./images/puma.png" alt="Puma">
+					<img src="./images/polo.png" alt="Polo">
+				</div>
+			</div>
+			<div id="footer-nav" class="col-12 text-center">
+				<div class="footer-logo">
+					<a href="./">
+						<img src="./images/logo_footer.png" alt="عربي">
+					</a>
+				</div>
+				<div id="footer-nav-links" class="col-12 d-none d-md-block">
+					<a href=".">Home</a>
+					<a href="search.html">Advanced search</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="newsletter" class="col-12 col-md-6 offset-md-3">
+					<form>
+						<label for="footer-email">
+							Follow the newsletter for the latest offers
+						</label>
+						<br>
+						<div class="input-group">
+							<input id="footer-email" class="form-control custom-form-control" type="email" placeholder="E-mail"
+								name="email" style="direction: rtl;" required>
+							<button type="submit" class="btn custom-btn-primary2">Follow</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="footer-copyright-social" class="col-12">
+				<div class="container">
+					<div class="clearfix">
+						<div id="copyright" class="float-right">
+						</div>
+						<div id="social-icons" class="float-left">
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook-square fa-lg"></i>
+							</a>
+							<a href="https://www.twitter.com">
+								<i class="fab fa-twitter-square fa-lg"></i>
+							</a>
+							<a href="https://www.instagram.com">
+								<i class="fab fa-instagram fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Footer-->
+	</div>
+</body>
+
+</html>
