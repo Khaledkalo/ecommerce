@@ -9,6 +9,7 @@ import "@fortawesome/fontawesome-free/js/all.min";
 import "webpack-jquery-ui";
 import "webpack-jquery-ui/css";
 import "jquery-ui-touch-punch/jquery.ui.touch-punch.min.js";
+// import images from './images/adidas_1.jpg';
 
 
 $(function () {
